@@ -1,0 +1,17 @@
+# example_tcp_Salt_app_packet
+
+The application demonstrates the operation and deployment of the salt-channel protocol
+to an insecure TCP communication channel (see example_tcp
+on which the salt channel protocol was deployed, resulting in this component -
+example_tcp_Salt_app). The protocol provides work with two at the application layer
+packet types, this folder works with the AppPaket type.
+
+Runable on Windows, after fine editing the makefile also on Linux.
+(I'm working on a makefile that will work subcutaneously on both axes.
+
+Salt-channel protocol: https://github.com/assaabloy-ppi/salt-channel-c
+
+I am also working on an application where the server 
+serves many connected clients simultaneously using the salt channel protocol:
+https://github.com/jv813yh/TCP_salt-channel
+
