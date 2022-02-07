@@ -31,9 +31,13 @@ Aplikacia demonstruje, pracu a nasadenie salt-channel protokolu
 na nezabezpeceny komunikacny kanal TCP (vid. zlozka example_tcp
 na ktoru bol nasadeny protokol salt-channel, coho je vysledkom tato zlozka -
 example_tcp_Salt_app). Protokol poskytuje na aplikacnej vrstve pracu s dvoma
-typmi paketov, v tejto zlozke sa pracuje s typom AppPaket. Maximalna prenasana
-velkost dat v aplikacii zavisi od konstanty MAX_SIZE, ktora je definovana
-priamo v zdrojovych kodoch client00.c a server00.c
+typmi paketov, v tejto zlozke sa pracuje s typom AppPaket. 
+
+Spustitelne na Windowse, po jemnej uprave makefile suboru aj na Linuxe.
+(Na makefile subore, ktory bude funkcny subezne na oboch os pracujem.
+
+Salt-channel protokol: https://github.com/assaabloy-ppi/salt-channel-c
+
 Blizsi opis paketov, aplikacie, protokolu a vsetko co s protokolom suvisi 
 som opisal v diplomovej praci - "Bezpecna komunikacia s vyuzitim 
 salt-channel protokolu".
