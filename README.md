@@ -12,6 +12,7 @@ Runable on Windows, after fine editing the makefile also on Linux.
 Salt-channel protocol: https://github.com/assaabloy-ppi/salt-channel-c
 
 I am also working on an application where the server 
-serves many connected clients simultaneously using the salt channel protocol:
+serves many connected clients simultaneously using the salt channel protocol
+on TCP/IP:
 https://github.com/jv813yh/TCP_salt-channel
 
