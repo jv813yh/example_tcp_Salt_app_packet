@@ -194,7 +194,6 @@ int main() {
      */
     protocol_buffer[PROTOCOL_BUFFER], verify = 0;
 
-
     /* Time measurement variables */
     clock_t start_t, end_t;
 
@@ -203,7 +202,6 @@ int main() {
      * after a successful tcp handshake   
      */
     SOCKET socket_client;
-
 
     /* ==  Variables for working with salt-channel protocol == */
 
@@ -225,7 +223,6 @@ int main() {
      * SALT_SUCCESS, SALT_PENDING, SALT_ERROR            
      */
     salt_ret_t ret;
-
 
     /* ==== Creating client socket and TCP connection ==== */
 
@@ -260,7 +257,6 @@ int main() {
         fprintf(stderr, "socket() failed. (%d)\n", GETSOCKETERRNO());
         return 1;
     }
-
 
     printf("Binding socket to local address...\n");
     if (bind(socket_listen,
@@ -474,6 +470,8 @@ int main() {
 
         /* The size of the decrypted data */
         uint32_t decrypt_size = 0;
+        
+        printf("Data reception and decryption\n");
 
         /**
          * Reads one or multiple encrypted message.
@@ -560,6 +558,8 @@ int main() {
             {
                 copy_buffer[k] = toupper(copy_buffer[k]);
             }
+            
+            printf("Encrypting data and sending it\n");
 
             /**
              * Write encrypted messages
