@@ -9,7 +9,11 @@ packet types, this folder works with the AppPaket type.
 Runable on Windows, after fine editing the makefile also on Linux.
 (I'm working on a makefile that will work subcutaneously on both axes.
 
-Salt-channel protocol: https://github.com/assaabloy-ppi/salt-channel-c
+Salt-channel protocol: 
+https://github.com/assaabloy-ppi/salt-channel-c
+
+Salt crypto wrapper for modified version of TweetNaCl:
+https://github.com/assaabloy-ppi/salt-channel-c/blob/master/src/external/tweetnacl_modified/tweetnacl_modified_wrapper.c
 
 I am also working on an application where the server 
 serves many connected clients simultaneously using the salt channel protocol
