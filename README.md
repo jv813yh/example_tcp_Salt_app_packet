@@ -1,4 +1,4 @@
-# example_tcp_Salt_app_packet
+# example_tcp_salt_channel
 
 The program can be compiled using a makefile and they are added
 .bat files for easy launch of server and client applications.
