@@ -31,7 +31,7 @@
  * protocol on TCP communication channel.
  *
  * Compileable on Windows with WinLibs standalone build 
- * of GCC and MinGW-w64 but also functional on Linux.
+ * of GCC and MinGW-w64.
  *
  * For more details on salt channel see:
  * https://github.com/assaabloy-ppi/salt-channel-c
