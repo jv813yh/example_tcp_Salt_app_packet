@@ -30,8 +30,12 @@ zlozka SRC_LIB vsetky zdrojove kody, ktore aplikacia vyuziva.
 Aplikacia demonstruje, pracu a nasadenie salt-channel protokolu  
 na nezabezpeceny komunikacny kanal TCP (vid. zlozka example_tcp
 na ktoru bol nasadeny protokol salt-channel, coho je vysledkom tato zlozka -
-example_tcp_Salt_app). Protokol poskytuje na aplikacnej vrstve pracu s dvoma
-typmi paketov, v tejto zlozke sa pracuje s typom AppPaket. 
+example_tcp_salt_channel). Protokol poskytuje na aplikacnej vrstve pracu 
+s dvoma typmi paketov, v tejto zlozke sa pracuje s oboma, zavisloti
+od prenasanych dat, ak su do UINT16_MAX, pracuje sa
+s App paketom, ak su data vacsie, pracuje sa s Multi App paketom.
+Maximalna prenasana velkost dat v aplikacii zavisi od konstanty MAX_SIZE
+na strane servera, ktora je definovana priamo v zdrojovom kode server00.c
 
 Spustitelne na Windowse, po jemnej uprave makefile suboru aj na Linuxe.
 (Na makefile subore, ktory bude funkcny subezne na oboch os pracujem.
