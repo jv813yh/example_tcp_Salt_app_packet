@@ -19,8 +19,7 @@ with the App packet, if the data is larger, the Multi App packet is used.
 The maximum amount of data transferred in an application depends on the MAX_SIZE 
 constant on the server side, which is defined directly in the source code server00.c
 
-Runable on Windows, after fine editing the makefile also on Linux.
-(I'm working on a makefile that will work subcutaneously on both axes.
+Runable on Windows.
 
 Salt-channel protocol: 
 https://github.com/assaabloy-ppi/salt-channel-c
