@@ -37,8 +37,7 @@ s App paketom, ak su data vacsie, pracuje sa s Multi App paketom.
 Maximalna prenasana velkost dat v aplikacii zavisi od konstanty MAX_SIZE
 na strane servera, ktora je definovana priamo v zdrojovom kode server00.c
 
-Spustitelne na Windowse, po jemnej uprave makefile suboru aj na Linuxe.
-(Na makefile subore, ktory bude funkcny subezne na oboch os pracujem.
+Spustitelne na Windowse.
 
 Salt-channel protokol: https://github.com/assaabloy-ppi/salt-channel-c
 
