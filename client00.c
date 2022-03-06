@@ -518,7 +518,9 @@ int main(int argc, char *argv[])
             /* Filling a block of memory with a particular value */
             memset(tx_buffer, 0, file_size + count_of_write_blocks);
             memset(rx_buffer, 0, file_size + count_of_read_blocks);
-
+             
+            printf("Encrypting data and sending it\n");
+          
             /**
              * Write encrypted messages
              *
@@ -648,6 +650,8 @@ int main(int argc, char *argv[])
 
             printf("\n");
             ret_msg = SALT_ERROR;
+          
+            printf("Data reception and decryption\n");
 
             /**
              * Reads one or multiple encrypted message.
@@ -815,7 +819,9 @@ uint8_t *loading_file(char *file,
             printf("Failed to open create file %s\n", file);
             exit(0);
         }
-
+        
+        printf("Creating own file\n");
+      
         uint32_t i = 0;
 
         printf("Enter the approximate file size in bytes: \n");
