@@ -36,15 +36,13 @@ od prenasanych dat, ak su do UINT16_MAX, pracuje sa
 s App paketom, ak su data vacsie, pracuje sa s Multi App paketom.
 Maximalna prenasana velkost dat v aplikacii zavisi od konstanty MAX_SIZE
 na strane servera, ktora je definovana priamo v zdrojovom kode server00.c
+Vyuziva sa dynamicka alokacia pamate.
 
-Spustitelne na Windowse.
+Spustitelne na Windows a Linux.
 
 Salt-channel protokol: https://github.com/assaabloy-ppi/salt-channel-c
 
 Blizsi opis paketov, aplikacie, protokolu a vsetko co s protokolom suvisi 
 som opisal v diplomovej praci - "Bezpecna komunikacia s vyuzitim 
 salt-channel protokolu".
-
-
-
 
