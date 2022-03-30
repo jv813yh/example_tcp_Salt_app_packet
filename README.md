@@ -25,7 +25,7 @@ Dynamic memory allocation is used.
 If you want no dynamic allocation:
 (I'm working on it)
 
-Runable on Windows and Linux.
+# Runable on Windows and Linux.
 
 Salt-channel protocol: 
 https://github.com/assaabloy-ppi/salt-channel-c
