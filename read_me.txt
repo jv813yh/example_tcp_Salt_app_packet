@@ -21,7 +21,8 @@ Zoznam suborov
 
 Program je kompilovatelny pomocou makefile suboru a su pridane
 .bat subory pre jednoduche spustenie aplikacie servera a klienta.
-Server vyuziva loopback adresu a pocuva na porte 8080.
+Server vyuziva loopback adresu a pocuva na porte 8080 (Tieto hodnoty
+sa zadavaju z prikazoveho riadku, takze je mozne ich menit).
 Poskytuje funkciu toupper(), ktora prevadza male znaky prijate klientom
 na velke znaky a odosiela ich klientovi, kde klient prijate data vypisuje
 do CLI. Zlozka INC obsahuje vsetky potrebne hlavickove subory pre pracu a 
