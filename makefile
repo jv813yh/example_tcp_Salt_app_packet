@@ -1,3 +1,11 @@
+##################################################
+## Diplomova praca                              ##
+## Meno studenta: Jozef Vendel                  ##
+## Veduci DP: prof. Ing. Milos Drutarovsky CSc. ##
+## Skola: KEMT FEI TUKE                         ##
+## Datum vytvorenia: 21.01.2022	                ##
+##################################################
+
 CC=gcc
 CFLAGS=-c -O2 -Wall -fcommon -I./INC
 LDFLAGS= -lws2_32 -lm
