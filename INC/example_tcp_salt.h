@@ -199,7 +199,7 @@ salt_ret_t salt_read_and_decrypt(salt_channel_t *p_channel,
 
 
 /* Function for calculated count of blocks */
-int calculated_count_of_blocks(uint32_t file_size, 
+uint32_t calculated_count_of_blocks(uint32_t file_size, 
                                uint32_t block_size, 
                                uint32_t overhead_size);
 
