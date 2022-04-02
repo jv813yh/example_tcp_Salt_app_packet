@@ -112,13 +112,13 @@ int main(int argc, char *argv[])
      *
      * print_out: statement of received data
      */
-    int repeat, test, print_out = 0, free_input = 0,    
+    int repeat, test, print_out = 0, free_input = 0;    
 
     /* 
      * Variables for auxiliary calculations when 
      * working with blocks for protocol (size of buffer)
      */
-        count_of_read_blocks = 0,
+      uint32_t  count_of_read_blocks = 0,
         count_of_write_blocks = 0;
 
     /**
