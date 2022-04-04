@@ -1,6 +1,6 @@
 /**
  * ===============================================
- * client00.c   v.2.7
+ * client00.c   v.1.7
  * 
  * KEMT FEI TUKE, Diploma thesis
  *
