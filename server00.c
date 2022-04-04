@@ -1,6 +1,6 @@
 /**
  * ===============================================
- * server00.c   v.2.5
+ * server00.c   v.1.5
  * 
  * KEMT FEI TUKE, Diploma thesis
  * 
