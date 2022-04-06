@@ -10,6 +10,12 @@ CC=gcc
 CFLAGS=-c -O2 -Wall -fcommon -I./INC
 LDFLAGS= -lws2_32 -lm
 
+#v zavislosti od Windows / Linux
+ifeq ($(OS), Windows_NT)
+LDFLAGS= -lws2_32 -lm
+else
+LDFLAGS= -lm
+endif
 
 #meno vytvorenej kniznice
 LIBRARY=libcrypto.a
