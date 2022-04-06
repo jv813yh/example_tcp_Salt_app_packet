@@ -104,7 +104,9 @@ int main(int argc, char *argv[])
         "using the toupper(), where it converts all data received\n"
         "from the client by the toupper() function and sends the\n" 
         "changed data back to the client. Cryptographic security\n" 
-        "is provided by the salt channel protocol.\n\n\n");
+        "is provided by the salt channel protocol.\n");
+    printf("\nThe maximum size that I can currently process depends\n"
+        "on the constant MAX_SIZE and is: %u\n", MAX_SIZE);
 
 /* ========  Variables ======== */
     /* 
