@@ -208,7 +208,11 @@ int main(int argc, char *argv[])
             printf("\n\nYou have decided to create a test file to test the application.\n"
                 "Follow this instructions:\n"
                 "Please enter name of file with suffix, example: example.txt \n");
-            scanf("%s", own_file);
+            if (EOF == scanf("%s", own_file))
+            {
+                printf("Bad name of file for create\n");
+                return 0;
+            }
 
             /* Random generate file and loading input data */
             input = loading_file(own_file, &file_size, 0); 
@@ -326,7 +330,11 @@ int main(int argc, char *argv[])
             /* End of sending and receiving data, encryption and decryption */ 
             printf("\nDo you want to finish?\nPress number, '1'-> to quit\n"
                 "Press '0' -> to continue\n");
-            scanf("%d", &repeat);
+            if (EOF == scanf("%d", &repeat))
+            {
+                printf("Bad choice for reperat or continue\n");
+                return 0;
+            }
 
             if(free_input) 
                 free(input);
