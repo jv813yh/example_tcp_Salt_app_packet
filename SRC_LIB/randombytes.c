@@ -15,7 +15,6 @@
 * 
 */
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -34,7 +33,7 @@ typedef unsigned long long u64;
 
 void randombytes(unsigned char *buffer, unsigned int buffer_length)
 {
-	//int status = FAILURE;
+	int status = FAILURE;
 
 #ifdef WIN32
 	HCRYPTPROV hCryptProv = 0;
@@ -42,7 +41,7 @@ void randombytes(unsigned char *buffer, unsigned int buffer_length)
 	if (CryptAcquireContext(&hCryptProv, NULL, NULL, PROV_RSA_FULL, CRYPT_VERIFYCONTEXT))
 	{
 #if RANDOMBYTES_DEBUG
-		printf("CryptAcquireContext suceeded\n");
+		printf("\nCryptAcquireContext suceeded\n");
 #endif
 		if (CryptGenRandom(hCryptProv, buffer_length, buffer))
 		{
@@ -57,6 +56,7 @@ void randombytes(unsigned char *buffer, unsigned int buffer_length)
 			printf("CryptReleaseContext succeeded\n");
 #endif
 		}
+		if (status == SUCCESS) printf("Randombytes has been successfully performed\n");
 	}
 #else
 	FILE *fp = fopen("/dev/urandom", "rb");
@@ -68,10 +68,11 @@ void randombytes(unsigned char *buffer, unsigned int buffer_length)
 			printf("Read from /dev/urandom succeeded\n");
 #endif
 			//status = SUCCESS;
+
+			if (status == SUCCESS) printf("Randombytes has been successfully performed\n");
 		}
 		fclose(fp);
 	}
-}
 #endif
 }
 
