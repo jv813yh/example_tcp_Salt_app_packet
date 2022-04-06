@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
 { 
     /* Checking the correct program parameters */
     if (argc < 3) {
-        fprintf(stderr, "usage: tcp_server ip_host port\n");
+        fprintf(stderr, "usage: server ip_host port\n");
         return 1;
     }
 
