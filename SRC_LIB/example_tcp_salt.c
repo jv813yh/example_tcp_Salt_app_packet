@@ -896,7 +896,7 @@ uint8_t *loading_file(char *file,
         printf("Enter the approximate file size in bytes: \n");
         if (EOF == scanf("%u",&expected_size_file))
         {   
-            printf("Failed to load size"\n);
+            printf("Failed to load size\n");
             return 0;
         }
         expected_size_file = expected_size_file / 
