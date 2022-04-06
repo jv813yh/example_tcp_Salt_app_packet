@@ -894,11 +894,19 @@ uint8_t *loading_file(char *file,
         uint32_t i = 0;
 
         printf("Enter the approximate file size in bytes: \n");
-        scanf("%u",&expected_size_file);
+        if (EOF == scanf("%u",&expected_size_file))
+        {   
+            printf("Failed to load size"\n);
+            return 0;
+        }
         expected_size_file = expected_size_file / 
                             (sizeof(expected_size_file) * sizeof(expected_size_file));
         printf("Enter max integer (range): \n");
-        scanf("%u",&range);
+        if (EOF == scanf("%u",&range))
+        {   
+            printf("Failed to load range\n");
+            return 0;
+        }
 
         while(i++ < expected_size_file)
         {
