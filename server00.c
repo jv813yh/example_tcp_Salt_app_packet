@@ -78,14 +78,14 @@
 /* Maximum size of data transmitted */
 #define MAX_SIZE            UINT16_MAX * 30
 
-int main(int argc, char *argv[]) 
-{ 
-    /* Checking the correct program parameters */
-    if (argc < 3) {
-        fprintf(stderr, "usage: server ip_host port\n");
-        return 1;
-    }
+/* The port number on which the server is loading */
+#define PORT                    "8080"
 
+
+
+
+int main(void) 
+{ 
     /* Initializing Winscok - Win32 apps , ONLY FOR WINDOWS !!! */
 #if defined(_WIN32)
     WSADATA d;
@@ -157,7 +157,7 @@ int main(int argc, char *argv[])
      * Creates a socket (return this socket) with which it waits 
      * for a connection from the client   
      */
-    socket_listen = create_socket_and_listen(argv[1], argv[2]);
+    socket_listen = create_socket_and_listen(PORT);
 
     printf("Waiting for connections...\n");
 
