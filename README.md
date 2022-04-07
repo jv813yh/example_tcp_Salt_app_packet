@@ -2,8 +2,8 @@
 
 The program can be compiled using a makefile and they are added
 .bat files for easy launch for Windows of server and client applications.
-The server uses the loopback address and listens on port 8080
-(The values can change, they are given from the command line when calling both source codes).
+The server listens on port 8080 (macro PORT). 
+The client enters this information when calling the application (client IP PORT).
 
 Provides a toupper () function that converts lowercase letters received by clients
 for large characters and sending to their clients, where the client receives lists of data
